@@ -1,0 +1,126 @@
+<?php
+/** 
+ *
+ *	The MIT License (MIT)
+ *	
+ *	Copyright (c) 2015 Nurbality LLC
+ *	
+ *	Permission is hereby granted, free of charge, to any person obtaining a copy
+ *	of this software and associated documentation files (the "Software"), to deal
+ *	in the Software without restriction, including without limitation the rights
+ *	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ *	copies of the Software, and to permit persons to whom the Software is
+ *	furnished to do so, subject to the following conditions:
+ *	
+ *	The above copyright notice and this permission notice shall be included in all
+ *	copies or substantial portions of the Software.
+ *	
+ *	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ *	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ *	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ *	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ *	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ *	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ *	SOFTWARE.
+ *	
+ *	 
+ *	DISCLAIMER
+ *	Do not edit or add to this file if you wish to upgrade Jumbee to newer
+ *	versions in the future. If you wish to customize Jumbee for your
+ *	needs please refer to http://mvc.nurbality.com/documentation for more information. 
+ *
+ * Jumbee 
+ *
+ * @package     Jumbee
+ * @copyright   Copyright (c) 2015 Nurbality LLC. (http://www.nurbality.com)
+ * @license     http://jumbee.nurbality.com/license/mit
+ */
+
+
+
+
+	 class Core{
+	 	public $registry;
+	 	public $Libraries,$Models;
+		public function __construct(){
+			// self::__autoload();
+			// self::__modelLoad();
+			// self::__helperLoad();
+			
+		}
+
+		private function __autoload(){
+			
+		}
+		// private function __autoload(){
+		// 	$directory = "../application/libraries/";
+		// 	$dh  = opendir($directory);
+		// 	while (false !== ($filename = readdir($dh))) {
+		// 		if(!is_dir($directory.$filename)){
+		// 	    		$files[] = $filename;
+		// 	    	}
+		// 	}
+		// 	foreach($files as $file){
+		// 		include($directory.$file);
+		// 		$classes = get_declared_classes();
+		// 		$class = end($classes);
+		// 		try{
+		// 		$this->Libraries->$class = new $class;
+		// 		}catch(Exception $e){
+		// 			throw new Exception('<table cellspacing="0" cellpadding="0" align="center"><tr><td style="width:800px;height:30px;font-family:arial;font-weight:900;background: #DC143C;color: #FFF8DC;border: 1px solid #DC143C;padding:10px;">Nurb Framework Error </td></tr><tr><td style="border: 1px solid #DC143C;padding:10px;background:#FFC0CB;color: #800000;font-family:arial;">'.$class_name. ' class not loaded.</td></tr></table>');
+		// 		}
+		// 	}			
+		// }
+
+		// private function __modelLoad(){
+		// 	$directory = "../application/model/";
+		// 	$dh  = opendir($directory);
+		// 	while (false !== ($filename = readdir($dh))) {
+		// 		if(!is_dir($directory.$filename)){
+		// 	    		$files[] = $filename;
+		// 	    	}
+		// 	}
+
+		// 	foreach($files as $file){
+		// 		include($directory.$file);
+		// 		$classes = get_declared_classes();
+				
+		// 		$class = end($classes);
+				
+		// 		try{
+		// 		$this->Models->$class = new $class;
+		// 		}catch(Exception $e){
+		// 			throw new Exception('<table cellspacing="0" cellpadding="0" align="center"><tr><td style="width:800px;height:30px;font-family:arial;font-weight:900;background: #DC143C;color: #FFF8DC;border: 1px solid #DC143C;padding:10px;">Nurb Framework Error </td></tr><tr><td style="border: 1px solid #DC143C;padding:10px;background:#FFC0CB;color: #800000;font-family:arial;">'.$class_name. ' class not loaded.</td></tr></table>');
+		// 		}
+		// 	}			
+		// }
+
+
+		// private function __helperLoad(){
+		// 	$directory = "../application/helper/";
+		// 	$dh  = opendir($directory);
+		// 	while (false !== ($filename = readdir($dh))) {
+		// 		if(!is_dir($directory.$filename)){
+		// 	    		$files[] = $filename;
+		// 	    	}
+		// 	}
+
+		// 	foreach($files as $file){
+		// 		include($directory.$file);
+		// 		$classes = get_declared_classes();
+				
+		// 		$class = end($classes);
+				
+		// 		try{
+		// 		$this->Helper->$class = new $class;
+		// 		}catch(Exception $e){
+		// 			throw new Exception('<table cellspacing="0" cellpadding="0" align="center"><tr><td style="width:800px;height:30px;font-family:arial;font-weight:900;background: #DC143C;color: #FFF8DC;border: 1px solid #DC143C;padding:10px;">Nurb Framework Error </td></tr><tr><td style="border: 1px solid #DC143C;padding:10px;background:#FFC0CB;color: #800000;font-family:arial;">'.$class_name. ' class not loaded.</td></tr></table>');
+		// 		}
+		// 	}			
+		// }
+
+	}
+?>
+
+
+

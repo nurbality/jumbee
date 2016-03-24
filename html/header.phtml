@@ -1,0 +1,17 @@
+<!-- Header -->
+					<header id="header">
+						<h1><?php echo $lang->__('Jumbee');?></h1>
+						<p>Written in PHP 5.4 by Dan Vander Meer</p>
+						<p>This framework was written to be fully extentable with its built in library autoloader making any 3rd Party PHP library written easily integratable in seconds.</p>
+						<p>With the built in auto loader you don't need to know any fancy framework specific formatting in order to load libraries. If the library is a class, simply add it to the libraries directory and use the $this->Core variable with the class name of the library and you are good to go.</p>
+
+						<p>Examples</p>
+						<p>In the /{root}/application/libraries directory you will find input.php this is a simple library that allows you to sanitize query strings and HTTP POST variables. To use this library simply use the variable 
+							<pre class="highlight" >$this->Core->Input->Params;</pre>
+							If you have a form that you are sumbitting and it has the post fields username and password. you can get the sanitized input as follows.
+							<pre class="highlight" >
+								$this->Core->Input->Params['username'];
+								$this->Core->Input->Params['password'];
+							</pre>
+						</p>
+					</header>
